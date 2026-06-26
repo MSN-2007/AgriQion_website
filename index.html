@@ -89,183 +89,199 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield-check"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.8 17 5 19 5a1 1 0 0 1 1 1z"></path><path d="m9 12 2 2 4-4"></path></svg>
             Built for Indian Farms
           </div>
-          <h1 class="hero-title">Smart Agriculture Automation, Built for Your Farm</h1>
+          <h1 class="hero-title">Smart Agriculture Automation, <span class="text-primary">Built for Your Farm</span></h1>
           <p class="hero-description">
-            AgriQion delivers modular automation systems for irrigation, pump control, and farm monitoring — customized to your land, crops, and water usage.
+            Agriqon delivers modular automation systems for irrigation, pump control, and farm monitoring — customized to your land, crops, and water usage.
           </p>
           <div class="hero-actions">
-            <a href="#assessment" class="btn-primary">Request Farm Assessment</a>
+            <a href="contact.html" class="btn-primary">Request Farm Assessment <span style="margin-left: 6px;">→</span></a>
             <a href="#talk-to-engineer" class="btn-ghost btn-talk-engineer">Talk to an Engineer</a>
           </div>
         </div>
 
         <!-- Live Dashboard Card Widget -->
         <div class="reveal reveal-delay-2" style="position: relative;">
-          <div class="dashboard-gradient-bg"></div>
-          <div class="dashboard-card">
-            <div class="dashboard-header">
-              <div class="dashboard-title-container">
-                <span class="dashboard-tag">Live Farm Monitoring</span>
-                <span class="dashboard-title">Smart Irrigation</span>
+          <!-- Blurred glow behind -->
+          <div class="pointer-events-none" style="position: absolute; top: -1rem; right: -1rem; bottom: -1rem; left: -1rem; background: linear-gradient(to right, hsl(var(--primary)/0.15), hsl(var(--accent)/0.15)); border-radius: 1.5rem; filter: blur(40px); z-index: 0;"></div>
+          
+          <div style="position: relative; background-color: hsl(var(--card)); border-radius: 1rem; border: 1px solid hsl(var(--border)); padding: 32px; z-index: 1; box-shadow: var(--badge-shadow);">
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px;">
+              <!-- Card 1: Smart Irrigation -->
+              <div class="hero-widget-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-widget-icon"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
+                <span class="hero-widget-label">Smart Irrigation</span>
+                <span class="hero-widget-value">Active</span>
               </div>
-              <div class="dashboard-status">
-                <span class="status-dot animate-pulse"></span>
-                Active
+              <!-- Card 2: Pump Status -->
+              <div class="hero-widget-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-widget-icon"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                <span class="hero-widget-label">Pump Status</span>
+                <span class="hero-widget-value">Running</span>
               </div>
-            </div>
-
-            <div class="dashboard-grid">
-              <!-- Soil Moisture Node -->
-              <div class="dashboard-widget">
-                <span class="widget-label">Soil Moisture</span>
-                <div class="moisture-circle-container">
-                  <div class="moisture-circle">
-                    <svg>
-                      <circle class="bg-circle" cx="25" cy="25" r="20"></circle>
-                      <circle class="val-circle" cx="25" cy="25" r="20"></circle>
-                    </svg>
-                  </div>
-                  <div>
-                    <span class="widget-value moisture-val-text">32%</span>
-                    <span class="widget-subtext" style="display: block;">Optimal Range</span>
-                  </div>
-                </div>
+              <!-- Card 3: Soil Moisture -->
+              <div class="hero-widget-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-widget-icon"><path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z"></path></svg>
+                <span class="hero-widget-label">Soil Moisture</span>
+                <span class="hero-widget-value">68%</span>
               </div>
-
-              <!-- Pump Status Node -->
-              <div class="dashboard-widget">
-                <span class="widget-label">Pump Status</span>
-                <span class="widget-value pump-status-text">Running</span>
-                <span class="widget-subtext">
-                  <span class="status-dot pump-status-dot"></span> Three-Phase Power
-                </span>
-              </div>
-
-              <!-- Water Flow Node -->
-              <div class="dashboard-widget">
-                <span class="widget-label">Water Flow</span>
-                <span class="widget-value water-flow-val">12.1 L/min</span>
-                <span class="widget-subtext">Sensor Depth: 30cm</span>
-              </div>
-
-              <!-- Active Zone Node -->
-              <div class="dashboard-widget">
-                <span class="widget-label">Active Zone</span>
-                <span class="widget-value" style="font-size: 1.1rem; line-height: 1.5; padding-top: 4px;">Zone 1: Vegetables</span>
-                <span class="widget-subtext">SMS Alerts Enabled</span>
+              <!-- Card 4: Water Flow -->
+              <div class="hero-widget-card">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="hero-widget-icon"><circle cx="12" cy="12" r="10"></circle><path d="m12 14-2-4h4Z"></path><path d="M12 2v2"></path><path d="M12 20v2"></path><path d="M4.93 4.93l1.41 1.41"></path><path d="M17.66 17.66l1.41 1.41"></path><path d="M2 12h2"></path><path d="M20 12h2"></path><path d="M6.34 17.66l-1.41 1.41"></path><path d="M19.07 4.93l-1.41 1.41"></path></svg>
+                <span class="hero-widget-label">Water Flow</span>
+                <span class="hero-widget-value">12 L/min</span>
               </div>
             </div>
-
-            <!-- Interactivity: Start/Stop Pump button -->
-            <button class="pump-control-btn running">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-power"><path d="M12 2v10"></path><path d="M18.4 6.6a9 9 0 1 1-12.77.04"></path></svg> Stop Pump
-            </button>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Problems We Solve -->
-    <section class="section-padding" style="background-color: hsl(var(--secondary) / 0.3); border-top: 1px solid hsl(var(--border)); border-bottom: 1px solid hsl(var(--border));">
+    <section class="section-padding" style="background-color: hsl(var(--background)); border-top: 1px solid hsl(var(--border)); border-bottom: 1px solid hsl(var(--border));">
       <div class="container">
         <div class="section-header reveal">
-          <span class="section-subtitle">Challenges Addressed</span>
           <h2 class="section-title">Problems We Solve</h2>
-          <p class="section-description">Real challenges faced by farmers every day, resolved through precise, robust engineering systems.</p>
+          <p class="section-description">Real challenges faced by farmers every day — and working solutions.</p>
         </div>
 
         <div class="grid-4">
           <!-- Problem 1 -->
           <div class="feature-card reveal reveal-delay-1">
-            <span class="feature-num">01</span>
             <div class="feature-icon-wrapper">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
             </div>
             <h3 class="feature-title">Manual Pump Operation</h3>
-            <p class="feature-desc">Eliminate late-night trips to the field for pump control. Switch your water supply from the comfort of your home.</p>
+            <p class="feature-desc">Eliminate late-night trips to the field for pump control.</p>
           </div>
 
           <!-- Problem 2 -->
           <div class="feature-card reveal reveal-delay-2">
-            <span class="feature-num">02</span>
             <div class="feature-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4."></path></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-droplets"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"></path><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"></path></svg>
             </div>
-            <h3 class="feature-title">Water Inefficiency</h3>
-            <p class="feature-desc">Avoid over-irrigation or crop damage. Water is delivered automatically based on actual soil moisture thresholds.</p>
+            <h3 class="feature-title">Water Wastage</h3>
+            <p class="feature-desc">Stop over-irrigation from fixed schedules that ignore soil conditions.</p>
           </div>
 
           <!-- Problem 3 -->
           <div class="feature-card reveal reveal-delay-3">
-            <span class="feature-num">03</span>
             <div class="feature-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-zap-off"><polyline points="12.41 6.75 13 2 8 2 8 6"></polyline><path d="m19 19-7 7v-12"></path><line x1="2" y1="2" x2="22" y2="22"></line></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-eye"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"></path><circle cx="12" cy="12" r="3"></circle></svg>
             </div>
-            <h3 class="feature-title">Power Outages & Failures</h3>
-            <p class="feature-desc">Dry-run protection and three-phase power alerts prevent pump motor burnouts during fluctuating electricity supply.</p>
+            <h3 class="feature-title">No Visibility</h3>
+            <p class="feature-desc">Get real-time data on soil moisture, weather, and pump status.</p>
           </div>
 
           <!-- Problem 4 -->
           <div class="feature-card reveal reveal-delay-4">
-            <span class="feature-num">04</span>
             <div class="feature-icon-wrapper">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-trending-up"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-alert-triangle"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
             </div>
-            <h3 class="feature-title">Soil & Crop Health</h3>
-            <p class="feature-desc">Continuous monitoring of soil moisture, salt concentration, and temperature helps prevent root rot and maximize yields.</p>
+            <h3 class="feature-title">Unnoticed Failures</h3>
+            <p class="feature-desc">Receive instant alerts when pumps fail or conditions change.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Assessment Form Section -->
-    <section class="section-padding" id="assessment">
+    <!-- Modular Devices Section -->
+    <section class="modular-section">
       <div class="container">
-        <div class="reveal">
-          <div class="cta-card">
-            <div class="cta-text-content">
-              <span style="font-family: 'SFMono-Regular', monospace; text-transform: uppercase; color: hsl(var(--accent)); font-size: 0.75rem; font-weight: 600;">Request Audit</span>
-              <h2 style="font-size: 2.25rem; font-weight: 700;">Request a Free Farm Assessment</h2>
-              <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; font-size: 0.9rem;">Our agricultural engineering experts will analyze your farm layout, irrigation system, crops, and local water quality to recommend the ideal automation system.</p>
-              
-              <ul class="cta-bullets">
-                <li class="cta-bullet-item">
-                  <svg class="cta-bullet-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
-                  <span>Designed for Indian field conditions</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg class="cta-bullet-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
-                  <span>Solar-powered nodes with battery backup</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg class="cta-bullet-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-check-big"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><path d="m9 11 3 3L22 4"></path></svg>
-                  <span>No upfront fee for assessment</span>
-                </li>
-              </ul>
-            </div>
-
-            <!-- Form -->
-            <form style="background-color: hsl(var(--card)); border: 1px solid var(--border-dark); border-radius: 12px; padding: 24px; display: flex; flex-direction: column; gap: 16px;">
-              <div class="form-group">
-                <label for="form-name">Name</label>
-                <input type="text" id="form-name" class="input" placeholder="Ramesh Kumar" required>
-              </div>
-              <div class="form-group">
-                <label for="form-phone">Phone Number</label>
-                <input type="tel" id="form-phone" class="input" placeholder="+91 98765 43210" pattern="^[0-9\+\-\s]{10,15}$" required>
-              </div>
-              <div class="form-group">
-                <label for="form-email">Email (Optional)</label>
-                <input type="email" id="form-email" class="input" placeholder="ramesh@gmail.com">
-              </div>
-              <div class="form-group">
-                <label for="form-desc">Crops Grown & Location</label>
-                <input type="text" id="form-desc" class="input" placeholder="e.g., Rice & Cotton in Zaheerabad" required>
-              </div>
-              <button type="submit" class="btn-primary" style="width: 100%; margin-top: 8px;">Request Assessment</button>
-            </form>
+        <div class="section-header reveal">
+          <h2 class="section-title">Modular Devices. Farm-Specific Customization.</h2>
+          <p class="section-description">We don't sell generic kits. Every system is configured for your specific needs.</p>
+        </div>
+        
+        <div class="modular-grid">
+          <div class="modular-card reveal reveal-delay-1">
+            <span class="modular-num">01</span>
+            <h3 class="modular-title">Standard Base Devices</h3>
+            <p class="modular-desc">Reliable, field-tested hardware designed for Indian conditions.</p>
+          </div>
+          <div class="modular-card reveal reveal-delay-2">
+            <span class="modular-num">02</span>
+            <h3 class="modular-title">Custom Configuration</h3>
+            <p class="modular-desc">Settings tuned to your crop type, soil, and irrigation method.</p>
+          </div>
+          <div class="modular-card reveal reveal-delay-3">
+            <span class="modular-num">03</span>
+            <h3 class="modular-title">Installation & Support</h3>
+            <p class="modular-desc">On-site setup with ongoing monitoring and maintenance.</p>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Why Agriqon? -->
+    <section class="why-section">
+      <div class="container why-grid">
+        <div class="reveal">
+          <h2 class="section-title" style="color: hsl(var(--primary-foreground)); margin-bottom: 24px;">Why Agriqon?</h2>
+          <div class="why-quote">
+            "We don't sell kits.<br>We build working farm automation systems."
+          </div>
+          <ul class="why-bullets">
+            <li class="why-bullet-item">
+              <span class="why-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Designed for Indian field conditions</span>
+            </li>
+            <li class="why-bullet-item">
+              <span class="why-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Works during power & network issues</span>
+            </li>
+            <li class="why-bullet-item">
+              <span class="why-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Modular and expandable over time</span>
+            </li>
+            <li class="why-bullet-item">
+              <span class="why-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>No unnecessary sensors or complexity</span>
+            </li>
+            <li class="why-bullet-item">
+              <span class="why-bullet-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </span>
+              <span>Local installation & support</span>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="reveal reveal-delay-2">
+          <div class="stats-card">
+            <div class="stats-row">
+              <span class="stats-label">Farms Automated</span>
+              <span class="stats-value">500+</span>
+            </div>
+            <div class="stats-row">
+              <span class="stats-label">Water Savings</span>
+              <span class="stats-value">Up to 40%</span>
+            </div>
+            <div class="stats-row">
+              <span class="stats-label">Field Experience</span>
+              <span class="stats-value">10+ Years</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Design Your Farm Automation System CTA -->
+    <section class="section-padding" style="background-color: hsl(var(--background));">
+      <div class="container text-center reveal">
+        <h2 class="section-title" style="margin-bottom: 16px;">Design Your Farm Automation System</h2>
+        <p class="section-description" style="max-width: 640px; margin-left: auto; margin-right: auto; margin-bottom: 32px;">
+          Start with a free site assessment. Our engineers will evaluate your farm and recommend the right automation setup.
+        </p>
+        <a href="contact.html" class="btn-primary">Request Farm Assessment <span style="margin-left: 6px;">→</span></a>
       </div>
     </section>
 

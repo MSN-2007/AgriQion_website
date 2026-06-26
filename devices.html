@@ -94,39 +94,49 @@
     <!-- Devices List Section -->
     <section class="section-padding">
       <div class="container">
-        <div class="grid-2">
+        <div class="device-grid">
           
           <!-- Device 1: Smart Pump Controller -->
-          <div class="card reveal" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
-                <span class="device-badge-tag">Actuator</span>
-                <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: SPC-V3</span>
+          <div class="device-card reveal">
+            <div class="device-image-container">
+              <img src="assets/device-pump-controller.jpg" alt="Smart Pump Controller" class="device-image">
+            </div>
+            <div class="device-info">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                  <span class="device-badge-tag">Actuator</span>
+                  <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: SPC-V3</span>
+                </div>
+                <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 8px;">Smart Pump Controller</h2>
+                <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
+                  Control your irrigation pump remotely with automatic scheduling and manual override capabilities.
+                </p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Remote ON/OFF control via mobile</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Automatic irrigation based on sensor data</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Manual override for emergency use</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Dry-run protection</span>
+                  </li>
+                </ul>
               </div>
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px;">Smart Pump Controller</h3>
-              <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
-                Control your irrigation pump remotely with automatic scheduling and manual override capabilities.
-              </p>
-              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Remote ON/OFF control via mobile</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Automatic irrigation based on sensor data</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Manual override for emergency use</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Dry-run protection</span>
-                </li>
-              </ul>
-              
-              <div class="device-card-customizable-block">
+              <div style="display: flex; gap: 12px; margin-top: auto;">
+                <a href="contact.html" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
+                <a href="contact.html" class="btn-ghost" style="flex: 1;">Learn More</a>
+              </div>
+            </div>
+            <div class="device-options-panel">
+              <div class="device-card-customizable-block" style="margin-top: 0; border-top: none; padding-top: 0;">
                 <span class="customizable-title">Customizable Options</span>
                 <ul class="customizable-list">
                   <li class="customizable-item">Single-phase / Three-phase support</li>
@@ -135,44 +145,49 @@
                 </ul>
               </div>
             </div>
-            
-            <div style="display: flex; gap: 12px; margin-top: 16px;">
-              <a href="#talk-to-engineer" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
-              <a href="#talk-to-engineer" class="btn-ghost" style="flex: 1;">Learn More</a>
-            </div>
           </div>
 
           <!-- Device 2: Soil Moisture Sensor Node -->
-          <div class="card reveal reveal-delay-1" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
-                <span class="device-badge-tag">Sensor</span>
-                <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: SMS-L1</span>
+          <div class="device-card reveal reveal-delay-1">
+            <div class="device-image-container">
+              <img src="assets/device-soil-sensor.jpg" alt="Soil Moisture Sensor Node" class="device-image">
+            </div>
+            <div class="device-info">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                  <span class="device-badge-tag">Sensor</span>
+                  <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: SMS-L1</span>
+                </div>
+                <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 8px;">Soil Moisture Sensor Node</h2>
+                <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
+                  Measure soil moisture at root depth with long-range wireless connectivity.
+                </p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Accurate capacitive soil moisture sensing</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Long-range LoRa communication</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Solar-powered with battery backup</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Multi-depth measurement options</span>
+                  </li>
+                </ul>
               </div>
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px;">Soil Moisture Sensor Node</h3>
-              <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
-                Measure soil moisture at root depth with long-range wireless connectivity.
-              </p>
-              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Accurate capacitive soil moisture sensing</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Long-range LoRa communication</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Solar-powered with battery backup</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Multi-depth measurement options</span>
-                </li>
-              </ul>
-              
-              <div class="device-card-customizable-block">
+              <div style="display: flex; gap: 12px; margin-top: auto;">
+                <a href="contact.html" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
+                <a href="contact.html" class="btn-ghost" style="flex: 1;">Learn More</a>
+              </div>
+            </div>
+            <div class="device-options-panel">
+              <div class="device-card-customizable-block" style="margin-top: 0; border-top: none; padding-top: 0;">
                 <span class="customizable-title">Customizable Options</span>
                 <ul class="customizable-list">
                   <li class="customizable-item">Crop-specific moisture thresholds</li>
@@ -181,44 +196,49 @@
                 </ul>
               </div>
             </div>
-            
-            <div style="display: flex; gap: 12px; margin-top: 16px;">
-              <a href="#talk-to-engineer" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
-              <a href="#talk-to-engineer" class="btn-ghost" style="flex: 1;">Learn More</a>
-            </div>
           </div>
 
           <!-- Device 3: Weather Monitoring Node -->
-          <div class="card reveal" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
-                <span class="device-badge-tag">Sensor</span>
-                <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: WMN-S2</span>
+          <div class="device-card reveal">
+            <div class="device-image-container">
+              <img src="assets/device-weather-node.jpg" alt="Weather Monitoring Node" class="device-image">
+            </div>
+            <div class="device-info">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                  <span class="device-badge-tag">Sensor</span>
+                  <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: WMN-S2</span>
+                </div>
+                <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 8px;">Weather Monitoring Node</h2>
+                <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
+                  Track local weather conditions for intelligent irrigation decisions.
+                </p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Temperature & humidity sensing</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Rain detection for irrigation blocking</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Wind speed monitoring (optional)</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Solar radiation measurement (optional)</span>
+                  </li>
+                </ul>
               </div>
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px;">Weather Monitoring Node</h3>
-              <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
-                Track local weather conditions for intelligent irrigation decisions.
-              </p>
-              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Temperature & humidity sensing</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Rain detection for irrigation blocking</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Wind speed monitoring (optional)</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Solar radiation measurement (optional)</span>
-                </li>
-              </ul>
-              
-              <div class="device-card-customizable-block">
+              <div style="display: flex; gap: 12px; margin-top: auto;">
+                <a href="contact.html" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
+                <a href="contact.html" class="btn-ghost" style="flex: 1;">Learn More</a>
+              </div>
+            </div>
+            <div class="device-options-panel">
+              <div class="device-card-customizable-block" style="margin-top: 0; border-top: none; padding-top: 0;">
                 <span class="customizable-title">Customizable Options</span>
                 <ul class="customizable-list">
                   <li class="customizable-item">Sensor package selection</li>
@@ -227,44 +247,49 @@
                 </ul>
               </div>
             </div>
-            
-            <div style="display: flex; gap: 12px; margin-top: 16px;">
-              <a href="#talk-to-engineer" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
-              <a href="#talk-to-engineer" class="btn-ghost" style="flex: 1;">Learn More</a>
-            </div>
           </div>
 
           <!-- Device 4: Gateway / Control Unit -->
-          <div class="card reveal reveal-delay-1" style="display: flex; flex-direction: column; justify-content: space-between; gap: 20px;">
-            <div>
-              <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
-                <span class="device-badge-tag">Controller Hub</span>
-                <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: GCU-R4</span>
+          <div class="device-card reveal reveal-delay-1">
+            <div class="device-image-container">
+              <img src="assets/device-gateway.jpg" alt="Gateway / Control Unit" class="device-image">
+            </div>
+            <div class="device-info">
+              <div>
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 12px;">
+                  <span class="device-badge-tag">Controller Hub</span>
+                  <span style="font-family: 'SFMono-Regular', monospace; font-size: 0.8rem; color: hsl(var(--muted-foreground));">Model: GCU-R4</span>
+                </div>
+                <h2 style="font-size: 1.5rem; font-weight: 500; margin-bottom: 8px;">Gateway / Control Unit</h2>
+                <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
+                  Central hub that collects sensor data and provides internet connectivity.
+                </p>
+                <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Aggregates data from all field nodes</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Internet connectivity (4G/Wi-Fi)</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Local data storage for offline operation</span>
+                  </li>
+                  <li class="cta-bullet-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                    <span>Mobile app and web dashboard access</span>
+                  </li>
+                </ul>
               </div>
-              <h3 style="font-size: 1.5rem; font-weight: 600; margin-bottom: 8px;">Gateway / Control Unit</h3>
-              <p style="color: hsl(var(--muted-foreground)); line-height: 1.6; margin-bottom: 16px;">
-                Central hub that collects sensor data and provides internet connectivity.
-              </p>
-              <ul style="list-style: none; display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px;">
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Aggregates data from all field nodes</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Internet connectivity (4G/Wi-Fi)</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Local data storage for offline operation</span>
-                </li>
-                <li class="cta-bullet-item">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check h-5 w-5 text-accent shrink-0"><polyline points="20 6 9 17 4 12"></polyline></svg>
-                  <span>Mobile app and web dashboard access</span>
-                </li>
-              </ul>
-              
-              <div class="device-card-customizable-block">
+              <div style="display: flex; gap: 12px; margin-top: auto;">
+                <a href="contact.html" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
+                <a href="contact.html" class="btn-ghost" style="flex: 1;">Learn More</a>
+              </div>
+            </div>
+            <div class="device-options-panel">
+              <div class="device-card-customizable-block" style="margin-top: 0; border-top: none; padding-top: 0;">
                 <span class="customizable-title">Customizable Options</span>
                 <ul class="customizable-list">
                   <li class="customizable-item">Number of connected devices</li>
@@ -272,11 +297,6 @@
                   <li class="customizable-item">Alert preferences</li>
                 </ul>
               </div>
-            </div>
-            
-            <div style="display: flex; gap: 12px; margin-top: 16px;">
-              <a href="#talk-to-engineer" class="btn-primary" style="flex: 1;">Configure for My Farm</a>
-              <a href="#talk-to-engineer" class="btn-ghost" style="flex: 1;">Learn More</a>
             </div>
           </div>
 
