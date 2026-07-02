@@ -2319,3 +2319,8 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
     scroll-behavior: auto !important;
   }
 }
+
+/* Contact Location Link Hover styling */
+.contact-location-link:hover {
+  color: hsl(var(--primary)) !important;
+}
