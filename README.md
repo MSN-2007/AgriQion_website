@@ -46,3 +46,23 @@ Since the website is built entirely on native HTML/CSS/JS, it runs directly out-
 2. **Local HTTP Server (Recommended)**: To serve correct mime-types and clean paths, spin up a lightweight server from the root directory:
    - Using Node.js: `npx http-server ./`
    - Using Python: `python -m http.server 8000`
+
+---
+
+## ⚡ Production & Cache Busting
+
+To ensure clients always load the latest stylesheet and script files (ignoring proxy and browser caches), the project implements a **Content Hashing** build step.
+
+### How it works:
+1. Source assets are maintained in `style.css` and `script.js` for development.
+2. When deploying or updating, run the hashing script:
+   ```bash
+   node hash-assets.js
+   ```
+3. This script:
+   - Computes MD5 content hashes of `style.css` and `script.js`.
+   - Cleans up older hashed copies (e.g. `style.[old-hash].css`).
+   - Copies source files to `style.[new-hash].css` and `script.[new-hash].js`.
+   - Modifies references in all `.html` files dynamically to point to the new hashed files.
+
+*Ensure you run this script and commit/push the modified HTML and hashed assets before publishing updates.*
