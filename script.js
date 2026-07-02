@@ -16,14 +16,10 @@ function initTheme() {
   const html = document.documentElement;
   const savedTheme = localStorage.getItem('theme');
   
-  // Determine starting theme
+  // Determine starting theme: default strictly to light
   let currentTheme = 'light';
   if (savedTheme === 'dark' || savedTheme === 'light') {
     currentTheme = savedTheme;
-  } else {
-    // Fallback to system media queries
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    currentTheme = prefersDark ? 'dark' : 'light';
   }
 
   // Apply starting theme
