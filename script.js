@@ -11,38 +11,45 @@ document.addEventListener('DOMContentLoaded', () => {
   initFaqAccordion();
 });
 
-/* 1. Theme Toggle (Light / Dark Mode) */
+/* 1. Theme Setup & Toggle */
 function initTheme() {
   const html = document.documentElement;
-  const themeToggleButtons = document.querySelectorAll('.theme-toggle-btn');
-  
-  // Get active theme from localStorage or system preferences
   const savedTheme = localStorage.getItem('theme');
-  const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
   
-  if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+  // Determine starting theme
+  let currentTheme = 'light';
+  if (savedTheme === 'dark' || savedTheme === 'light') {
+    currentTheme = savedTheme;
+  } else {
+    // Fallback to system media queries
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    currentTheme = prefersDark ? 'dark' : 'light';
+  }
+
+  // Apply starting theme
+  applyTheme(currentTheme);
+
+  // Set up listeners for theme toggle buttons
+  const themeButtons = document.querySelectorAll('#theme-toggle, .theme-toggle-btn');
+  themeButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const activeTheme = html.getAttribute('data-theme') || 'light';
+      const targetTheme = activeTheme === 'light' ? 'dark' : 'light';
+      applyTheme(targetTheme);
+    });
+  });
+}
+
+function applyTheme(theme) {
+  const html = document.documentElement;
+  if (theme === 'dark') {
     html.classList.add('dark');
     html.setAttribute('data-theme', 'dark');
   } else {
     html.classList.remove('dark');
     html.setAttribute('data-theme', 'light');
   }
-
-  themeToggleButtons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      if (html.classList.contains('dark')) {
-        html.classList.remove('dark');
-        html.setAttribute('data-theme', 'light');
-        localStorage.setItem('theme', 'light');
-        showToast('Theme Changed', 'Light mode activated successfully.');
-      } else {
-        html.classList.add('dark');
-        html.setAttribute('data-theme', 'dark');
-        localStorage.setItem('theme', 'dark');
-        showToast('Theme Changed', 'Dark mode activated successfully.');
-      }
-    });
-  });
+  localStorage.setItem('theme', theme);
 }
 
 /* 2. Header Scroll States */
@@ -58,7 +65,7 @@ function initHeaderScroll() {
     }
   };
 
-  window.addEventListener('scroll', checkScroll);
+  window.addEventListener('scroll', checkScroll, { passive: true });
   checkScroll(); // Initial check
 }
 
@@ -231,11 +238,13 @@ function showToast(title, message) {
   toast.innerHTML = `
     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="toast-icon"><circle cx="12" cy="12" r="10"></circle><path d="m9 12 2 2 4-4"></path></svg>
     <div class="toast-content">
-      <div class="toast-title">${title}</div>
-      <div class="toast-msg">${message}</div>
+      <div class="toast-title"></div>
+      <div class="toast-msg"></div>
     </div>
     <button class="toast-close">&times;</button>
   `;
+  toast.querySelector('.toast-title').textContent = title;
+  toast.querySelector('.toast-msg').textContent = message;
 
   // Close button functionality
   const closeBtn = toast.querySelector('.toast-close');

@@ -1,6 +1,5 @@
 /* style.css — AgriQion Design System CSS */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 /* 1. Fonts Setup */
 @font-face {
@@ -146,7 +145,7 @@ body {
 
 /* Headers Hierarchy - Playfair Display for headings */
 h1, h2, h3, h4, h5, h6, .font-heading {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 500;
   line-height: 1.2;
   color: hsl(var(--foreground));
@@ -518,18 +517,18 @@ html.dark .btn-ghost:hover, [data-theme="dark"] .btn-ghost:hover {
   font-weight: 500;
 }
 
-/* 5. Theme Toggle Button */
 .theme-toggle-btn {
-  background: none;
-  border: 1px solid hsl(var(--border));
-  border-radius: 6px;
-  padding: 8px;
-  cursor: pointer;
-  color: hsl(var(--foreground));
-  display: flex;
+  display: inline-flex !important;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s, color 0.2s;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  border: 1px solid hsl(var(--border));
+  background-color: transparent;
+  color: hsl(var(--foreground));
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
 }
 
 .theme-toggle-btn:hover {
@@ -1727,13 +1726,13 @@ html.dark .use-case-badge {
   display: flex;
   align-items: center;
   padding: 48px 0;
-  background-image: linear-gradient(to bottom, rgba(252, 251, 248, 0.95) 0%, rgba(252, 251, 248, 0.88) 100%), url('screens/scroll/scroll-000.png');
+  background-image: linear-gradient(to bottom, rgba(252, 251, 248, 0.95) 0%, rgba(252, 251, 248, 0.88) 100%), url('assets/medium-farm.png');
   background-size: cover;
   background-position: center;
 }
 
 html.dark .hero-section, [data-theme="dark"] .hero-section {
-  background-image: linear-gradient(to bottom, rgba(21, 28, 24, 0.96) 0%, rgba(21, 28, 24, 0.91) 100%), url('screens/scroll/scroll-000.png');
+  background-image: linear-gradient(to bottom, rgba(21, 28, 24, 0.96) 0%, rgba(21, 28, 24, 0.91) 100%), url('assets/medium-farm.png');
 }
 
 .blur-2xl {
@@ -1873,7 +1872,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 .stats-value {
   font-size: 1.75rem;
   font-weight: 500;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   color: hsl(var(--primary-foreground));
 }
 
@@ -1911,7 +1910,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 
 .modular-num {
   font-size: 4rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: hsl(var(--primary) / 0.08);
   line-height: 1;
@@ -1920,7 +1919,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 .modular-title {
   font-size: 1.25rem;
   font-weight: 600;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .modular-desc {
@@ -2006,7 +2005,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 }
 
 .solution-card-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: hsl(var(--foreground));
@@ -2237,7 +2236,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 /* Number styles */
 .customization-number-mobile {
   font-size: 3rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: hsl(var(--primary) / 0.15);
   line-height: 1;
@@ -2251,7 +2250,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 
 .customization-number-desktop {
   font-size: 2.25rem;
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-weight: 700;
   color: hsl(var(--primary) / 0.15);
   line-height: 1;
@@ -2276,7 +2275,7 @@ html.dark .hero-section, [data-theme="dark"] .hero-section {
 }
 
 .customization-step-title {
-  font-family: 'Playfair Display', Georgia, serif;
+  font-family: 'DM Sans', sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: hsl(var(--foreground));
