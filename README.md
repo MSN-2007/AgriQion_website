@@ -24,6 +24,9 @@ The application consists of a fully static, fast-loading architecture:
 - `contact.html` — Form to request assessments, direct email contacts, and phone assistance.
 - `404.html` — Telemetry Off-Grid handler page with a live RF signal scanner simulator.
 - `500.html` — System Fault controller page with a simulated reboot sequence and CLI diagnostics tracker.
+- `privacy.html` — Branded legal compliance page detailing farm data safety and device telemetry policies.
+- `terms.html` — Branded compliance page detailing device installation safety limits and support liabilities.
+- `robots.txt` — SEO crawling rule guidelines directing web crawlers and indexers.
 
 ---
 
