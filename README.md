@@ -27,6 +27,7 @@ The application consists of a fully static, fast-loading architecture:
 - `privacy.html` — Branded legal compliance page detailing farm data safety and device telemetry policies.
 - `terms.html` — Branded compliance page detailing device installation safety limits and support liabilities.
 - `robots.txt` — SEO crawling rule guidelines directing web crawlers and indexers.
+- `sitemap.xml` — XML sitemap listing all indexable public pages to optimize search engine crawlers.
 
 ---
 
